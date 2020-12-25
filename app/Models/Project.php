@@ -5,8 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Projeto extends Model
+class Project extends Model
 {
     use HasFactory;
-    protected $fillable=['titulo', 'descricao', 'data_ini', 'data_fim'];
+    protected $fillable=['title', 'description', 'date_start', 'date_end'];
+
 }
