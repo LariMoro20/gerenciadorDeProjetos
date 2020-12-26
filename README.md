@@ -37,6 +37,13 @@ http://localhost:8000/
 ```
 <br>
 A aplicação possui duas rotas distintas, uma para a aplicação e outra para API.<br>
-A rota destinada a aplicação é ``` http://localhost:8000/ ```, já a rota da API acrecenta-se /api no inicio, exemplo: ``` http://localhost:8000/api/```
+A rota destinada a aplicação é 
+``` 
+http://localhost:8000/ 
+```
+já a rota da API acrecenta-se /api no inicio, exemplo: 
+``` 
+http://localhost:8000/api/ 
+```
 
 Made by Lari Moro
