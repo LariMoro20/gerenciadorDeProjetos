@@ -34,7 +34,7 @@ php artisan serve
 <small>ATENÇÃO: Esse comando deleta todos os dados e tabelas e refaz o banco com as informações contidas no arquivo ```database/seeds/DatabaseSeeder.php```</small><br><br>
 ```php artisan migrate:fresh --seed```<br><br>
 
-
+## Rotas da aplicação/API
 - Quando iniciar, no seu navegador digite o seguinte endereço:<br>
 ```
 http://localhost:8000/
