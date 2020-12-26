@@ -71,8 +71,8 @@ http://localhost:8000/api/projetos/
 
 Para a remover um  usuario ou projeto, envie um DELETE para a seguinte URL alterando para o id desejado:<br>
 ``` 
-http://localhost:8000/api/users/id
-http://localhost:8000/api/projetos/id
+http://localhost:8000/api/users/1
+http://localhost:8000/api/projetos/1
 ```
 
 Made by Lari Moro
