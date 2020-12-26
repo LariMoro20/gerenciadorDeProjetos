@@ -30,6 +30,10 @@ php artisan key:generate
 php artisan migrate
 php artisan serve
 ```
+- Para popular a base de dados com as informações teste: (executar via terminal no diretório do projeto)<br>
+<small>ATENÇÃO: Esse comando deleta todos os dados e tabelas e refaz o banco com as informações contidas no arquivo ```database/seeds/DatabaseSeeder.php```</small><br><br>
+```php artisan migrate:fresh --seed```<br><br>
+
 
 - Quando iniciar, no seu navegador digite o seguinte endereço:<br>
 ```
