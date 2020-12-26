@@ -51,11 +51,28 @@ http://localhost:8000/api/
 ```
 
 - Rota API <br>
-Para a visualizar todos os usuarios/funcionarios ou os projetos, acesse as urls abaixo<br>
+Para a visualizar todos os usuarios/funcionarios ou os projetos, acesse as urls abaixo:<br>
 ``` 
 http://localhost:8000/api/users/
 http://localhost:8000/api/projetos/
+```
 
+Para a visualizar um  usuarios ou projeto, acesse as urls abaixo alterando para o id desejado:<br>
+``` 
+http://localhost:8000/api/users/show/1
+http://localhost:8000/api/projetos/show/1
+```
+
+Para a adicionar um  usuario ou projeto, envie um POST para a seguinte URL:<br>
+``` 
+http://localhost:8000/api/users/
+http://localhost:8000/api/projetos/
+```
+
+Para a remover um  usuario ou projeto, envie um DELETE para a seguinte URL alterando para o id desejado:<br>
+``` 
+http://localhost:8000/api/users/id
+http://localhost:8000/api/projetos/id
 ```
 
 Made by Lari Moro
