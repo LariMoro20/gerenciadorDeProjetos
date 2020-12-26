@@ -63,7 +63,7 @@ http://localhost:8000/api/users/show/1
 http://localhost:8000/api/projetos/show/1
 ```
 
-Para a adicionar um  usuario ou projeto, envie um POST para a seguinte URL:<br>
+Para a adicionar um  usuario ou projeto, envie um PUT para a seguinte URL:<br>
 ``` 
 http://localhost:8000/api/users/
 http://localhost:8000/api/projetos/
