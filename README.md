@@ -50,4 +50,12 @@ http://localhost:8000/
 http://localhost:8000/api/ 
 ```
 
+- Rota API <br>
+Para a visualizar todos os usuarios/funcionarios ou os projetos, acesse as urls abaixo<br>
+``` 
+http://localhost:8000/api/users/
+http://localhost:8000/api/projetos/
+
+```
+
 Made by Lari Moro
