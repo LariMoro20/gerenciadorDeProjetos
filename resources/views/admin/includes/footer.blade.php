@@ -1,4 +1,4 @@
-<footer class='footer clear-top '>
+<footer class='footer clear-top mt-auto'>
             <small>© 2020 by<a target="_blank" href="https://github.com/LariMoro20/"> Larissa Moro </a>All rights reserved.</small>
         </footer>
 <script>
@@ -26,6 +26,9 @@ $('.btnremoveuser').on( 'click', function (e) {
         });
     });
 
+    $( ".datepicker" ).datepicker({
+        dateFormat: "yy-mm-dd"
+    });
 
     $('.btnremoveproj').on( 'click', function (e) { 
         e.preventDefault();

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Requests\StoreUpdateProject;
 
 use Illuminate\Http\Request;
 use App\Models\Project;
@@ -22,14 +23,14 @@ class ProjectControllerAPI extends Controller
         return response()->json($proj);
     }
     
-    public function store(Request $request){
+    public function store(StoreUpdateProject $request){
         $proj = new Project();
         $proj->fill($request->all());
         $proj->save();
         return response()->json($proj, 201);
     }
 
-    public function update(Request $request, $id){
+    public function update(StoreUpdateProject $request, $id){
         $proj = Project::find($id);
         if(!$proj) {
             return response()->json([

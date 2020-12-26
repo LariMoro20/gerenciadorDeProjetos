@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Requests\StoreUpdateUserRequest;
 
 use Illuminate\Http\Request;
 use App\Models\User;
@@ -22,14 +23,14 @@ class UsersControllerAPI extends Controller
         return response()->json($users);
     }
     
-    public function store(Request $request){
+    public function store(StoreUpdateUserRequest $request){
         $user = new User();
         $user->fill($request->all());
         $user->save();
         return response()->json($user, 201);
     }
 
-    public function update(Request $request, $id){
+    public function update(StoreUpdateUserRequest $request, $id){
         $user = User::find($id);
         if(!$user) {
             return response()->json([

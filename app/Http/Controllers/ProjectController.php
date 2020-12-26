@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Requests\StoreUpdateProject;
 
 use Illuminate\Http\Request;
 use App\Models\Project;
@@ -17,7 +18,7 @@ class ProjectController extends Controller
         return view('admin.includes.header',['title' => 'Adicionar Projeto']).view('admin.projetos.create').view('admin.includes.footer');
     }
 
-    public function store(Request $request ){
+    public function store(StoreUpdateProject $request ){
         Project::create($request->all());
         return redirect()->route('projeto.listagem');
     }
@@ -37,7 +38,7 @@ class ProjectController extends Controller
         ]).view('admin.includes.footer');
     }
 
-    public function update(Request $request,$id){
+    public function update(StoreUpdateProject $request,$id){
         if(!$proj=Project::find($id)){
             return redirect()->back();
         }

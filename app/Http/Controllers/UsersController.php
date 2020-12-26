@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
+
+
+use App\Http\Requests\StoreUpdateUserRequest;
 use App\Models\User;
 use App\Models\Project;
 use App\Models\UserTypes;
@@ -34,7 +38,7 @@ class UsersController extends Controller
         ]).view('admin.includes.footer');
     }
 
-    public function store(Request $request ){
+    public function store(StoreUpdateUserRequest $request ){
        $user= User::create($request->all());
         return redirect()->route('users.listagem');
     }
@@ -64,7 +68,7 @@ class UsersController extends Controller
             'type' =>@$type
         ]).view('admin.includes.footer');
     }
-    public function update(Request $request,$id){
+    public function update(StoreUpdateUserRequest $request,$id){
         if(!$user=User::find($id)){
             return redirect()->back();
         }
