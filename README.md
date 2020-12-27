@@ -47,7 +47,7 @@ php artisan serve
 http://localhost:8000/
 ```
 - A aplicação possui duas rotas distintas, uma para a aplicação e outra para API.<br>
-A rota destinada a aplicação é <br>
+A rota destinada a aplicação (o foco é backend, o front é apenas para visualização) é <br>
 ``` 
 http://localhost:8000/ 
 ```
