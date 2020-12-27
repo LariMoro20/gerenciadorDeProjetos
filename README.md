@@ -6,7 +6,7 @@ O projeto, com foco backend, foi elaborado seguindo a seguinte instrução:
 ## User Story
 
 Como responsável por uma empresa de gerenciamento de projetos eu gostaria de controlar de forma simples todos os projetos da companhia. Os projetos terão um número ilimitado de empregados associados a eles, sendo que um empregado pode ser Gerente ou Funcionário. Cada gerente tem alguns funcionários. Os dados básicos dos projetos são descrição e deadline (Data Inicio e Fim).
-Crie um projeto de Api usando a última versão disponível do Laravel (https://laravel.com/docs), a resposta dos Controllers deve ser um JSON, cria as Rotas, Models, Requests e Resources ou Services necessários para criar empregados e projetos e listar os projetos existentes.
+<br><br>Crie um projeto de Api usando a última versão disponível do Laravel (https://laravel.com/docs), a resposta dos Controllers deve ser um JSON, cria as Rotas, Models, Requests e Resources ou Services necessários para criar empregados e projetos e listar os projetos existentes.
 <br><br>
 Como não há muitas especificações, foi feito um modelo que segue:
 
