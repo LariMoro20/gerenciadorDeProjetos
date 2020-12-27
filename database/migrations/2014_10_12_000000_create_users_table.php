@@ -19,11 +19,11 @@ class CreateUsersTable extends Migration
             $table->string('email');
             $table->string('password');
             $table->unsignedBigInteger('type');
-            $table->foreign('type')->references('id')->on('user_types');
+            //$table->foreign('type')->references('id')->on('user_types');
             $table->unsignedBigInteger('manager')->default(null);
-            $table->foreign('manager')->references('id')->on('users');
-            $table->unsignedBigInteger('project');
-            $table->foreign('project')->references('id')->on('projects');
+            //$table->foreign('manager')->references('id')->on('users');
+            $table->unsignedBigInteger('project')->default(null);
+           // $table->foreign('project')->references('id')->on('projects');
             $table->timestamps();
         });
     }
