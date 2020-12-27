@@ -1,13 +1,12 @@
-# Gerenciador de projetos com Laravel 8
-Aplicação com REST API desenvolvida em Laravel v8.9.0
+# Gerenciador de projetos PHP com Laravel 8
+Aplicação com REST API desenvolvida em Laravel Framework PHP
 
-Descrição da proposta:
-
+O projeto, com foco backend, foi elaborado seguindo a seguinte instrução:
 ## User Story
 Como responsável por uma empresa de gerenciamento de projetos eu gostaria de controlar de forma simples todos os projetos da companhia. Os projetos terão um número ilimitado de empregados associados a eles, sendo que um empregado pode ser Gerente ou Funcionário. Cada gerente tem alguns funcionários. Os dados básicos dos projetos são descrição e deadline (Data Inicio e Fim).
-
 Crie um projeto de Api usando a última versão disponível do Laravel (https://laravel.com/docs), a resposta dos Controllers deve ser um JSON, cria as Rotas, Models, Requests e Resources ou Services necessários para criar empregados e projetos e listar os projetos existentes.
-
+================================================================================
+Como não há muitas especificações, foi feito um modelo que segue:
 
 ## Instalação
  Comandos iniciais (executar via terminal no diretório do projeto)<br>
